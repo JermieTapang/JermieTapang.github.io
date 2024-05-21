@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - GamerHaven</title>
     <link rel="stylesheet" href="html.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
@@ -20,8 +21,8 @@
     </header>
     <section class="main-content">
         <h2>Get in Touch</h2>
-        <p>Have a question or suggestion? Feel free to contact us!</p>
-        <form action="#" method="post">
+        <p>Have a question or suggestion? Feel free to contact us using the form below or reach out to us on social media!</p>
+        <form id="contactForm">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
             <label for="email">Email:</label>
@@ -30,6 +31,9 @@
             <textarea id="message" name="message" required></textarea>
             <button type="submit">Send</button>
         </form>
+        <div id="formResponse" style="display:none;">
+            <p>Thank you for your message! We'll get back to you soon.</p>
+        </div>
     </section>
     <footer>
         <p>&copy; 2024 GamerHaven</p>

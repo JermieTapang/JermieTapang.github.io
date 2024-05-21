@@ -1,3 +1,98 @@
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.slide {
+    display: none;
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Dot indicators */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fade animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* Form response styling */
+#formResponse {
+    margin-top: 20px;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+    padding: 20px;
+    border-radius: 8px;
+}
+
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
@@ -27,6 +122,11 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6347;
 }
 
 footer {
@@ -36,7 +136,7 @@ footer {
     text-align: center;
     position: fixed;
     bottom: 0;
-    width: 100%;
+    width: 20%;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -46,7 +146,7 @@ footer {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
+    margin: 20px;
 }
 
 .game {
@@ -54,6 +154,11 @@ footer {
     margin-bottom: 20px;
     padding: 10px;
     border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.game:hover {
+    background-color: #f9f9f9;
 }
 
 /* Form Styles */
@@ -84,35 +189,5 @@ button {
     background-color: #333;
     color: #fff;
     border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 4px;
-}
-
-button:hover {
-    background-color: #555;
-}
-
-/* Hover Effects */
-.game:hover {
-    background-color: #f9f9f9;
-}
-
-button:hover {
-    background-color: #555;
-}
-
-/* Background Image */
-header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('header-background.jpg');
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-}
-
-footer {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('footer-background.jpg');
-    background-size: cover;
-    background-position: center;
-    color: #fff;
+    padding: 10px 
 }

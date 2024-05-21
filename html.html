@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GamerHaven Website</title>
     <link rel="stylesheet" href="html.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
@@ -21,6 +22,27 @@
     <section class="main-content">
         <h2>Latest News</h2>
         <p>Welcome to GamerHaven, your ultimate destination for gaming news, reviews, and more!</p>
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="img/E6Fgdch4.jpg" style="width:100%">
+                <div class="text">Cyberpunk 2077</div>
+            </div>
+            <div class="slide fade">
+                <img src="img/elden-ring_9swg.jpg" style="width:100%">
+                <div class="text">Elden Ring</div>
+            </div>
+            <div class="slide fade">
+                <img src="img/00b432c63c88b14d3bcf796380edb26e37c01032.jpg" style="width:100%">
+                <div class="text">Helldivers 2</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
     </section>
     <footer>
         <p>&copy; 2024 GamerHaven</p>
