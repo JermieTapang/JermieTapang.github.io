@@ -3,32 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GamerHaven Website</title>
+    <title>GamerHaven - Home</title>
     <link rel="stylesheet" href="html.css">
     <script defer src="script.js"></script>
 </head>
 <body>
     <header>
-        <h1>Welcome to GamerHaven</h1>
+        <div class="logo">
+            <h1>GamerHaven</h1>
+        </div>
         <nav>
-            <ul>
-                <li><a href="html.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="games.html">Games</a></li>
-                <li><a href="contact.html">Contact</a></li>
+            <ul class="taskbar">
+                <li><a href="html.html#home">Home</a></li>
+                <li><a href="about.html#about">About</a></li>
+                <li><a href="games.html#games">Games</a></li>
+                <li><a href="blog.html#blog">Blog</a></li>
+                <li><a href="contact.html#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <section class="main-content">
-        <h2>Latest News</h2>
-        <p>Welcome to GamerHaven, your ultimate destination for gaming news, reviews, and more!</p>
+    <section id="home" class="main-content">
+        <h2>Welcome to GamerHaven</h2>
+        <p>Your ultimate destination for gaming news, reviews, and more!</p>
         <div class="slideshow-container">
             <div class="slide fade">
                 <img src="img/E6Fgdch4.jpg" style="width:100%">
                 <div class="text">Cyberpunk 2077</div>
             </div>
             <div class="slide fade">
-                <img src="img/elden-ring_9swg.jpg" style="width:100%">
+                <img src="img/OzTpp7Dj.jpg" style="width:100%">
                 <div class="text">Elden Ring</div>
             </div>
             <div class="slide fade">
@@ -45,6 +48,11 @@
         </div>
     </section>
     <footer>
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank">Facebook</a>
+            <a href="https://www.twitter.com" target="_blank">Twitter</a>
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        </div>
         <p>&copy; 2024 GamerHaven</p>
     </footer>
 </body>

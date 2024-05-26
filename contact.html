@@ -3,31 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - GamerHaven</title>
+    <title>GamerHaven - Contact</title>
     <link rel="stylesheet" href="html.css">
     <script defer src="script.js"></script>
 </head>
 <body>
     <header>
-        <h1>Contact Us</h1>
+        <div class="logo">
+            <h1>GamerHaven</h1>
+        </div>
         <nav>
-            <ul>
-                <li><a href="html.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="games.html">Games</a></li>
-                <li><a href="contact.html">Contact</a></li>
+            <ul class="taskbar">
+                <li><a href="html.html#home">Home</a></li>
+                <li><a href="about.html#about">About</a></li>
+                <li><a href="games.html#games">Games</a></li>
+                <li><a href="blog.html#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <section class="main-content">
-        <h2>Get in Touch</h2>
-        <p>Have a question or suggestion? Feel free to contact us using the form below or reach out to us on social media!</p>
+    <section id="contact" class="main-content">
+        <h2>Contact Us</h2>
         <form id="contactForm">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
+            
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
+            
             <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5
             <textarea id="message" name="message" required></textarea>
             <button type="submit">Send</button>
         </form>
@@ -35,8 +40,3 @@
             <p>Thank you for your message! We'll get back to you soon.</p>
         </div>
     </section>
-    <footer>
-        <p>&copy; 2024 GamerHaven</p>
-    </footer>
-</body>
-</html>
